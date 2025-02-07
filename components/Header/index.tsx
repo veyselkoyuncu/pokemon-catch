@@ -1,6 +1,6 @@
 "use client";
 
-import { Menu, Avatar, Dropdown, Row, Col, Badge } from "antd";
+import { Menu, Avatar, Dropdown, Badge } from "antd";
 import { useSession, signOut } from "next-auth/react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/navigation";
@@ -76,7 +76,10 @@ const Header = () => {
                         {session && (
                             <Menu.Item key="pokeball" style={{ padding: "0" }}>
                                 <Badge count={caughtPokemons.length} showZero color="red">
-                                    <Image src="/pokeball.png" alt="Pokeball" width={40} height={40} />
+                                    <Link href="/profile">
+                                        <Image src="/pokeball.png" alt="Pokeball" width={40} height={40} />
+                                    </Link>
+
                                 </Badge>
                             </Menu.Item>
                         )}
