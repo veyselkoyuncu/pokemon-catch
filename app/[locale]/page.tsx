@@ -1,7 +1,8 @@
 "use client";
 
 import RandomPokemon from "@/components/RandomPokemon";
-import { Button, Typography } from "antd";
+import { Button } from "antd";
+import Typography from "antd/es/typography";
 import { useTranslations } from "next-intl";
 import { Link } from "@/navigation";
 
