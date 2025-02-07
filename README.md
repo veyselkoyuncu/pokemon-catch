@@ -1,36 +1,131 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pokemon Catch 🎮
 
-## Getting Started
+Pokémon dünyasına adım atın ve favori Pokémonlarınızı yakalayarak koleksiyonunuzu genişletin! Bu proje, **Next.js 14**, **TypeScript**, **GraphQL**, **Ant Design**, ve **Next-Auth** kullanılarak geliştirilmiştir.
 
-First, run the development server:
+---
+
+## 🛠 Proje Kurulumu
+
+### 1. Depoyu Klonlayın
+
+```bash
+git clone https://github.com/kullaniciadi/pokemon-catch.git
+cd pokemon-catch
+```
+
+### 2. Gerekli Paketleri Yükleyin
+
+```bash
+npm install
+# veya
+yarn install
+```
+
+### 3. Ortam Değişkenlerini Ayarlayın
+
+Proje kök dizininde bir `.env.local` dosyası oluşturun ve gerekli API anahtarlarını ve ayarları ekleyin:
+
+```
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=SECRET_KEY
+GITHUB_CLIENT_ID=YOUR_GITHUB_CLIENT_ID
+GITHUB_CLIENT_SECRET=YOUR_GITHUB_CLIENT_SECRET
+```
+
+### 4. Geliştirme Sunucusunu Çalıştırın
 
 ```bash
 npm run dev
-# or
+# veya
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Uygulama varsayılan olarak `http://localhost:3000` adresinde çalışacaktır.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Proje Özellikleri
 
-## Learn More
+- **Pokémon Yakalama:** Pokémon listesinde gezinip yakalama butonuyla koleksiyonunuza Pokémon ekleyin.
+- **Giriş Sistemi:** **GitHub OAuth** ile giriş yaparak yakaladığınız Pokémonları profil sayfanızda görüntüleyin.
+- **Dil Desteği:** **Türkçe ve İngilizce** dil seçenekleri arasında geçiş yapabilirsiniz.
+- **Responsive Tasarım:** Farklı cihazlar için optimize edilmiş bir tasarım.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📚 Kullanılan Teknolojiler
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **[Next.js](https://nextjs.org/)** - React tabanlı framework
+- **[React](https://reactjs.org/)** - Kullanıcı arayüzü kütüphanesi
+- **[TypeScript](https://www.typescriptlang.org/)** - Tip güvenliği ve daha güçlü kod yazımı
+- **[GraphQL](https://graphql.org/)** - API veri sorgulama dili
+- **[Ant Design](https://ant.design/)** - UI bileşen kütüphanesi
+- **[Next-Auth](https://next-auth.js.org/)** - Kimlik doğrulama kütüphanesi
+- **[Framer Motion](https://www.framer.com/motion/)** - Animasyonlar
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🐂 Proje Yapısı
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+/app
+  └── /[locale]         - Dil bazlı yönlendirmeler ve sayfalar
+/components             - Reusable React bileşenleri
+/context                - Global state ve context yönetimi
+/messages               - Çeviri dosyaları
+/public                 - Genel erişilebilir dosyalar (görseller vb.)
+```
+
+---
+
+## 📑 Temel Komutlar
+
+| Komut           | Açıklama                             |
+| --------------- | ------------------------------------ |
+| `npm run dev`   | Geliştirme sunucusunu başlatır       |
+| `npm run build` | Üretim için projeyi derler           |
+| `npm start`     | Üretim modunda uygulamayı çalıştırır |
+| `npm run lint`  | Kod kalitesini kontrol eder          |
+
+---
+
+## 📖 Çeviri Yapısı
+
+Proje, farklı dillerde destek sağlamak için **next-intl** kullanmaktadır. Dil dosyaları `messages/` dizininde saklanır. Örneğin:
+
+- `messages/en.json`
+- `messages/tr.json`
+
+Çeviriler, bileşenlerde `useTranslations` kullanılarak dinamik olarak çekilir:
+
+```tsx
+const t = useTranslations("common");
+<p>{t("title")}</p>
+```
+
+---
+
+## ✨ Gelecekteki Geliştirmeler
+
+- &#x20;Yakalanan Pokémonlar için filtreleme ve sıralama
+
+  &#x20;Detaylı Pokémon istatistikleri
+
+  &#x20;Daha fazla sosyal medya giriş seçeneği
+
+---
+
+## 🤝 Katkıda Bulunma
+
+Katkıda bulunmak için bir **pull request** açabilir veya önerilerinizi **issue** olarak paylaşabilirsiniz.
+
+---
+
+## 📙 Lisans
+
+Bu proje MIT lisansı ile lisanslanmıştır.
+
+---
+
+**Pokémon dünyasında iyi eğlenceler!**
+

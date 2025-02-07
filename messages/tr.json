@@ -1,0 +1,66 @@
+{
+  "common": {
+    "title": "Pokémon Yakala",
+    "pokemons": "Pokémonlar",
+    "catch": "Yakala!",
+    "login": "Giriş Yap",
+    "profile": "Profil",
+    "logout": "Çıkış Yap",
+    "selectLanguage": "Dil Seç"
+  },
+  "login": {
+    "title": "Giriş Yap",
+    "description": "Pokémon yakalamak için giriş yapmalısın!",
+    "button": "GitHub ile Giriş Yap",
+    "success": "Başarılı",
+    "successDescription": "Başarıyla giriş yaptın.",
+    "failure": "Giriş Başarısız",
+    "failureDescription": "Giriş sırasında bir sorun oluştu.",
+    "unexpectedError": "Beklenmeyen Hata",
+    "unexpectedErrorDescription": "Giriş sırasında beklenmeyen bir hata oluştu.",
+    "welcome": "Hoş geldin",
+    "user": "Kullanıcı"
+  },
+  "home": {
+    "welcomeTitle": "Pokémon Macerasına Hoş Geldiniz!",
+    "welcomeDescription": "Pokémon dünyasını keşfet, favorilerini yakala ve koleksiyonunu oluştur!",
+    "startAdventure": "Macerana Başla",
+    "randomPokemonTitle": "Rastgele Bir Pokémon ile Tanış",
+    "randomPokemonError": "Rastgele bir Pokémon yüklenemedi. Lütfen tekrar deneyin."
+  },
+  "pokemonDetails": {
+    "notFound": "Pokémon bulunamadı!",
+    "abilities": "Yetenekler",
+    "stats": "İstatistikler",
+    "types": "Türler",
+    "hp": "Can",
+    "attack": "Saldırı",
+    "defense": "Savunma",
+    "specialattack": "Özel Saldırı",
+    "specialdefense": "Özel Savunma",
+    "speed": "Hız",
+    "catchSuccessTitle": "Başarılı!",
+    "catchSuccessDescription": "{pokemon} başarıyla yakalandı!",
+    "catchButton": "Yakala",
+    "caughtButton": "Yakalandı!"
+  },
+  "pokemonList": {
+    "catchButton": "Yakala!",
+    "caughtButton": "Yakalandı!",
+    "catchSuccessTitle": "Başarılı!",
+    "catchSuccessDescription": "{pokemon} başarıyla yakalandı!",
+    "errorMessage": "Bir hata oluştu"
+  },
+  "profile": {
+    "title": "Pokémon Koleksiyonun",
+    "total": "Toplam Pokémon",
+    "unique": "Benzersiz Türler",
+    "favorite": "Favori Pokémonunu Seç",
+    "noPokemon": "Henüz hiç Pokémon yakalamadın! 🐣",
+    "yourFavorite": "Favori Pokémonun:",
+    "unauthenticatedTitle": "Giriş Yapın",
+    "unauthenticatedMessage": "Profil sayfasına erişmek için giriş yapmanız gerekiyor.",
+    "loginButton": "Giriş Yap"
+  }
+
+}

@@ -1,0 +1,67 @@
+{
+  "common": {
+    "title": "Pokémon Catch",
+    "pokemons": "Pokémons",
+    "catch": "Catch!",
+    "login": "Login",
+    "profile": "Profile",
+    "logout": "Logout",
+    "selectLanguage": "Select Language"
+  },
+  "login": {
+    "title": "Sign in",
+    "description": "You must sign in to catch Pokémon!",
+    "button": "Sign in with GitHub",
+    "success": "Success",
+    "successDescription": "Successfully signed in.",
+    "failure": "Login Failed",
+    "failureDescription": "There was an issue signing in.",
+    "unexpectedError": "Unexpected Error",
+    "unexpectedErrorDescription": "An unexpected error occurred during login.",
+    "welcome": "Welcome",
+    "user": "User"
+  },
+  "home": {
+    "welcomeTitle": "Welcome to the Pokémon Adventure!",
+    "welcomeDescription": "Explore the Pokémon world, catch your favorites, and build your collection!",
+    "startAdventure": "Start Your Adventure",
+    "randomPokemonTitle": "Meet a Random Pokémon",
+    "randomPokemonError": "Could not load a random Pokémon. Please try again."
+  },
+  "pokemonDetails": {
+    "notFound": "Pokémon not found!",
+    "abilities": "Abilities",
+    "stats": "Stats",
+    "types": "Types",
+    "hp": "HP",
+    "attack": "Attack",
+    "defense": "Defense",
+    "specialattack": "Special Attack",
+    "specialdefense": "Special Defense",
+    "speed": "Speed",
+    "catchSuccessTitle": "Success!",
+    "catchSuccessDescription": "{pokemon} was successfully caught!",
+    "catchButton": "Catch",
+    "caughtButton": "Caught!"
+  },
+  "pokemonList": {
+    "catchButton": "Catch!",
+    "caughtButton": "Caught!",
+    "catchSuccessTitle": "Success!",
+    "catchSuccessDescription": "{pokemon} was successfully caught!",
+    "errorMessage": "Error occurred"
+  },
+  "profile": {
+    "title": "Your Pokémon Collection",
+    "total": "Total Pokémon",
+    "unique": "Unique Species",
+    "favorite": "Select Your Favorite Pokémon",
+    "noPokemon": "You haven't caught any Pokémon yet! 🐣",
+    "yourFavorite": "Your Favorite Pokémon:",
+    "unauthenticatedTitle": "Please Login",
+    "unauthenticatedMessage": "You need to log in to access the profile page.",
+    "loginButton": "Login"
+  }
+
+
+}
