@@ -115,11 +115,11 @@ const PokemonDetail = () => {
             <Divider />
             <Typography.Text strong>{t("stats")}:</Typography.Text>
             <ul style={{ listStyle: "none" }}>
-                {Object.entries(pokemon.baseStats).map(([stat, value]) => (
-                    <li key={stat}>
-                        {t(stat)}: {value}
-                    </li>
-                ))}
+                {Object.values(pokemon.abilities)
+                    .filter((ability): ability is { name: string } => ability !== null && ability !== undefined)
+                    .map((ability) => (
+                        <li key={ability.name}>{ability.name}</li>
+                    ))}
             </ul>
 
             {animating ? (
