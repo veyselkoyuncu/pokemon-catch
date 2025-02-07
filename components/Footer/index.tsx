@@ -1,6 +1,6 @@
 "use client";
 
-import { Layout } from "antd";
+import Layout from "antd/es/layout";
 
 const { Footer: AntdFooter } = Layout;
 
