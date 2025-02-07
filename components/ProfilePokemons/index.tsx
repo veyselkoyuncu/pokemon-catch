@@ -14,13 +14,11 @@ const { Option } = Select;
 const ProfilePokemons = () => {
     const t = useTranslations("profile");
     const { data: session } = useSession();
-    if (!session) return null;
-
     const { caughtPokemons } = usePokemon();
     const [favoritePokemon, setFavoritePokemon] = useState<Pokemon | null>(null);
 
     const uniquePokemonCount = new Set(caughtPokemons.map((pokemon) => pokemon.name)).size;
-
+    if (!session) return null;
     return (
         <div style={{ padding: "20px 0" }}>
             <Title level={3}>{t("title")}</Title>

@@ -49,13 +49,14 @@ const PokemonDetail = () => {
     const rawId = params.id ? (Array.isArray(params.id) ? params.id[0] : params.id) : "";
     const pokemonId = sanitizePokemonId(decodeURIComponent(rawId));
 
-    if (!pokemonId) {
-        return <Typography.Title level={3}>{t("notFound")}</Typography.Title>;
-    }
 
     const { loading, error, data } = useQuery(GET_POKEMON_DETAILS, {
         variables: { pokemon: pokemonId },
     });
+
+    if (!pokemonId) {
+        return <Typography.Title level={3}>{t("notFound")}</Typography.Title>;
+    }
 
     if (loading) return <Spin size="large" />;
     if (error || !data?.getPokemon) return <Typography.Title level={3}>{t("notFound")}</Typography.Title>;
