@@ -116,10 +116,11 @@ const PokemonDetail = () => {
             <Typography.Text strong>{t("stats")}:</Typography.Text>
             <ul style={{ listStyle: "none" }}>
                 {Object.values(pokemon.abilities)
-                    .filter((ability): ability is { name: string } => ability !== null && ability !== undefined)
+                    .filter((ability): ability is { name: string } => ability !== null && ability !== undefined && typeof ability === "object" && "name" in ability)
                     .map((ability) => (
                         <li key={ability.name}>{ability.name}</li>
                     ))}
+
             </ul>
 
             {animating ? (
