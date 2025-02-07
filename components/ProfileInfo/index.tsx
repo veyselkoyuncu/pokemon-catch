@@ -1,9 +1,13 @@
 "use client";
-
-import { Card, Avatar, Typography, Divider, Button } from "antd";
+import Card from "antd/es/card";
+import Avatar from "antd/es/avatar";
+import Typography from "antd/es/typography";
+import Divider from "antd/es/divider";
+import Button from "antd/es/button";
 import { useSession } from "next-auth/react";
-import { useTranslations , useLocale } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
+
 
 const ProfileInfo = () => {
     const t = useTranslations("profile");

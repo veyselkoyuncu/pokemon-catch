@@ -1,6 +1,9 @@
 "use client";
 
-import { Menu, Avatar, Dropdown, Badge } from "antd";
+import Menu from "antd/es/menu";
+import Avatar from "antd/es/avatar";
+import Dropdown from "antd/es/dropdown";
+import Badge from "antd/es/badge";
 import { useSession, signOut } from "next-auth/react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/navigation";

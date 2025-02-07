@@ -1,7 +1,12 @@
-"use client";
-
+"use client"
 import { useQuery, gql } from "@apollo/client";
-import { Card, Spin, Button, notification, Pagination, Row, Col } from "antd";
+import Card from "antd/es/card";
+import Spin from "antd/es/spin";
+import Button from "antd/es/button";
+import notification from "antd/es/notification";
+import Pagination from "antd/es/pagination";
+import Row from "antd/es/row";
+import Col from "antd/es/col";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { usePokemon } from "@/context/PokemonContext";
@@ -11,7 +16,6 @@ import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { useLocale } from "next-intl";
 import { useTranslations } from "next-intl";
-
 // GraphQL Query
 const GET_POKEMONS = gql`
   query GetPokemons {

@@ -1,12 +1,17 @@
 "use client";
 
 import { usePokemon } from "@/context/PokemonContext";
-import { Card, Empty, Typography, Select, Divider } from "antd";
+import Card from "antd/es/card";
+import Empty from "antd/es/empty";
+import Typography from "antd/es/typography";
+import Select from "antd/es/select";
+import Divider from "antd/es/divider";
 import Image from "next/image";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { useSession } from "next-auth/react";
 import { Pokemon } from "@/types";
+
 
 const { Title, Text } = Typography;
 const { Option } = Select;

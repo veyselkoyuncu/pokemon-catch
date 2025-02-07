@@ -1,7 +1,8 @@
 "use client";
 
 import { signIn, useSession } from "next-auth/react";
-import { Button, notification } from "antd";
+import { notification } from "antd";
+import Button from "antd/es/button";
 import { useTranslations } from "next-intl";
 
 const LoginForm = () => {

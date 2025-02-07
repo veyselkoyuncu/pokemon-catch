@@ -1,10 +1,13 @@
 "use client";
 
 import { gql, useQuery } from "@apollo/client";
-import { Card, Spin, Typography } from "antd";
+import Card from "antd/es/card";
+import Spin from "antd/es/spin";
+import Typography from "antd/es/typography";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
+
 
 const GET_ALL_POKEMONS = gql`
   query GetAllPokemons {

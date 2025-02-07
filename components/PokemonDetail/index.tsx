@@ -1,7 +1,12 @@
 "use client";
 
 import { useQuery, gql } from "@apollo/client";
-import { Card, Typography, Divider, Spin, Button, notification } from "antd";
+import Card from "antd/es/card";
+import Typography from "antd/es/typography";
+import Divider from "antd/es/divider";
+import Spin from "antd/es/spin";
+import Button from "antd/es/button";
+import { notification } from "antd";
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import { useTranslations } from "next-intl";
