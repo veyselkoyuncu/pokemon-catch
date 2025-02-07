@@ -1,7 +1,6 @@
 "use client";
 
 import RandomPokemon from "@/components/RandomPokemon";
-import { Button } from "antd";
 import Typography from "antd/es/typography";
 import { useTranslations } from "next-intl";
 import { Link } from "@/navigation";
@@ -14,10 +13,9 @@ export default function Home() {
             <Typography.Title level={1}>{t("welcomeTitle")}</Typography.Title>
             <Typography.Paragraph>{t("welcomeDescription")}</Typography.Paragraph>
 
-            <Link href="/pokemons">
-                <Button type="primary" size="large" style={{ marginBottom: "40px" }}>
+            <Link href="/pokemons"
+                style={{ marginBottom: "40px", padding:"10px 30px", backgroundColor:"#4096ff", color:"#fff", textDecoration:"none", borderRadius:"18px"}}>
                     {t("startAdventure")}
-                </Button>
             </Link>
 
             <RandomPokemon />
